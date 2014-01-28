@@ -210,46 +210,34 @@ foo(myFunc);
 //myFunc</code></pre>
 						</section>
 						<section>
-							<pre><code>
-fucntion abc(){
+							<pre><code>fucntion abc(){
 	return 1;
 }
-
 function foo(){
 	return abc();	
 }
-
 foo();
-//1;
-							</code></pre>
+//1;</code></pre>
 						</section>
 						<section>
-							<pre><code>
-fucntion abc(){
+							<pre><code>fucntion abc(){
 	return 1;
 }
-
 function foo(f){
 	return f();	
 }
-
 foo(abc);
-//1;
-							</code></pre>
+//1;</code></pre>
 						</section>
 						<section>
-							<pre><code>
-fucntion abc(){
+							<pre><code>fucntion abc(){
 	return 1;
 }
-
 function foo(f){
-	return typeof f();	
+  return typeof f();	
 }
-
 foo(abc);
-//"number";
-							</code></pre>
+//"number";</code></pre>
 						</section>
 						<section>
 							<pre><code>
