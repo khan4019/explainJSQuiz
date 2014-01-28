@@ -10,7 +10,7 @@
  *********************************************/
 body {
   background: #f0f1eb;
-  background-color: #D6EFD9; /*#f0f1eb*/
+  background-color: rgba(214, 239, 217, 0.75); /*#f0f1eb*/
 }
 
 .reveal {
