@@ -252,13 +252,42 @@ foo(abc);
 						<section>
 							<h1>#10</h1>
 							<pre><code>
-var x = [typeof x, typeof y][1];
+var x =[typeof x, typeof y][1];
 typeof typeof x;
 							</code></pre>
 						</section>
 						<section>
-							
+							<pre><code>
+//if not declared 
+//or declared not assigned
+//things are undefined
+typeof y;
+//"undefined"
+							</code></pre>
 						</section>
+						<section>
+							<pre><code>[typeof x, typeof y][1];
+//"undefined"</code></pre>
+							<pre class="fragment"><code>
+var x =[typeof x, typeof y][1];
+x;
+//"undefined"
+							</code></pre>
+							</section>
+							<section>
+								<pre><code>typeof "undefined";
+//"string"</code></pre>
+								<pre class="fragment"><code>typeof "string";
+//"string"</code></pre>
+
+							</section>
+							<section>
+								<pre><code>
+var x =[typeof x, typeof y][1];
+typeof typeof x;
+//"string"
+							</code></pre>
+							</section>
 					</section>
 					<section>
 						<section>
