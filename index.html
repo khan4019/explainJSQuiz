@@ -254,6 +254,23 @@ foo(abc);
 							</code></pre>
 						</section>
 					</section>
+					<section>
+						<section>
+							<h1>#6</h1>
+							<pre><code>var foo = {
+    bar: function() { 
+    	return this.baz; 
+    },
+    baz: 1
+ };
+(function(){
+  return typeof arguments[0]();
+})(foo.bar);</code></pre>
+						</section>
+						<section>
+							
+						</section>
+					</section>
 					<section>						
 						<section>
 							<h1>#10</h1>
@@ -338,16 +355,7 @@ typeof undefined;
 //"undefined"
 							</code></pre>							
 						</section>
-					</section>
-					<section>
-						<section>
-							<h1></h1>
-							<pre><code></code></pre>
-						</section>
-						<section>
-							
-						</section>
-					</section>
+					</section>					
 					<section>
 						<h1>Thank You</h1>
 						<br/>
