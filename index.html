@@ -196,13 +196,69 @@ var y = 1, x = y = typeof x;
 							</code></pre>
 						</section>
 						<section>
-							
+							<pre><code>function abc(){ 
+   return 1; 
+}
+abc();
+//1</code></pre>
+							<pre class="fragment"><code>function foo(f){
+  return f;
+}
+foo(2);
+//2	
+foo(myFunc);
+//myFunc</code></pre>
 						</section>
 						<section>
-							
+							<pre><code>
+fucntion abc(){
+	return 1;
+}
+
+function foo(){
+	return abc();	
+}
+
+foo();
+//1;
+							</code></pre>
 						</section>
-						<section></section>
-						<section></section>
+						<section>
+							<pre><code>
+fucntion abc(){
+	return 1;
+}
+
+function foo(f){
+	return f();	
+}
+
+foo(abc);
+//1;
+							</code></pre>
+						</section>
+						<section>
+							<pre><code>
+fucntion abc(){
+	return 1;
+}
+
+function foo(f){
+	return typeof f();	
+}
+
+foo(abc);
+//"number";
+							</code></pre>
+						</section>
+						<section>
+							<pre><code>
+ (function f(f){
+   return typeof f();
+ })(function(){ return 1; });
+ //"number"
+							</code></pre>
+						</section>
 					</section>
 					<section>						
 						<section>
