@@ -299,15 +299,40 @@ typeof typeof x;
 							</code></pre>
 						</section>
 						<section>
-							
+							<pre><code>
+var foo = {
+	foo: {
+      bar: 1
+    }
+}</code></pre>
+<pre class="fragment"><code>foo.foo.bar;
+//1
+foo.bar;
+//undefined</code></pre>
+
 						</section>						
-					</section>
-					<section>
 						<section>
-							
+<pre><code>
+function abc(foo){
+	return foo.bar;
+}
+abc();
+//undefined
+</code></pre>
+<pre class="fragment"><code>
+typeof undefined;
+//"undefined"
+</code></pre>
 						</section>
 						<section>
-							
+							<pre><code>
+							<pre><code>
+(function(foo){
+  return typeof foo.bar;
+})({ foo: { bar: 1 } });
+//"undefined"
+							</code></pre>
+							</code></pre>							
 						</section>
 					</section>
 					<section>
