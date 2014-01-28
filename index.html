@@ -86,13 +86,10 @@
 				<div class="slides">
 <!-- start of intro -->
 					<section>						
+						<h2 style="margin-top:-150px !important;"><a href="http://bit.ly/1fudaLM">http://bit.ly/1fudaLM</a> </h2>
 						<img src="images/snow1.JPG" alt="">						
-						<br/>
-						<!-- <h2><a href="http://bit.ly/1gx0FRU">http://bit.ly/1gx0FRU</a> </h2> -->
-						<br/>
-						<p>
-							<a href="http://www.thatjsdude.com/">MD Khan</a> / <a href="http://twitter.com/mdkhan005">@mdkhan005</a>
-						</p>
+						<br>
+						<a href="http://www.thatjsdude.com/">MD Khan</a> / <a href="http://twitter.com/mdkhan005">@mdkhan005</a>
 					</section>
 					<section>
 						<img class="fullScreenImage" src="images/snow5.jpg" alt="">
@@ -153,6 +150,9 @@ typeof arguments;
 
 					</section>
 					<section>
+						<img class="fullScreenImage" src="images/snow3.jpg" alt="">
+					</section>
+					<section>						
 						<section>
 							<h1>#4</h1>
 							<pre><code>
@@ -268,8 +268,49 @@ foo(abc);
 })(foo.bar);</code></pre>
 						</section>
 						<section>
-							
+							<pre><code>
+var foo = {
+    bar: function() { 
+    	return this.baz; 
+    },
+    baz: 1
+ }; 
+							</code></pre>
+							<pre class="fragment"><code>
+foo.bar();
+//1
+							</code></pre>
 						</section>
+						<section>
+							<pre><code>
+var kkk = foo.bar;
+kkk;
+//function(){
+//   return this.baz;	
+//}
+							</code></pre>
+							<pre class="fragment"><code>
+kkk();
+//undefined
+							</code></pre>
+						</section>
+						<section>
+							<pre><code>var foo = {
+    bar: function() { 
+    	return this.baz; 
+    },
+    baz: 1
+ };
+(function(){
+  return typeof arguments[0]();
+})(foo.bar);</code></pre>
+<pre class="fragment"><code>
+//"undefined"
+</code></pre>
+						</section>
+					</section>
+					<section>
+						<img class="fullScreenImage" src="images/snow7.jpg" alt="">
 					</section>
 					<section>						
 						<section>
@@ -355,11 +396,14 @@ typeof undefined;
 //"undefined"
 							</code></pre>							
 						</section>
+					</section>
+					<section>
+						<img class="fullScreenImage" src="images/snow9.jpg" alt="">
 					</section>					
 					<section>
 						<h1>Thank You</h1>
 						<br/>
-						<!-- <h2><a href="http://bit.ly/1gx0FRU">http://bit.ly/1gx0FRU</a> </h2> -->
+						<h2><a href="http://bit.ly/1fudaLM">http://bit.ly/1fudaLM</a> </h2>
 						<br/>
 						<br/>
 						<a href="http://www.thatjsdude.com/">MD Khan</a> / <a href="http://twitter.com/mdkhan005">@mdkhan005</a>
