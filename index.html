@@ -47,6 +47,7 @@
 				pre code{
 					font-size: 2em !important;
 					line-height: 1.3em !important;
+					font-weight: bold !important;
 				}
 				.lineThrough{
 					text-decoration: line-through;					
@@ -105,15 +106,45 @@
 })();
 							</code></pre>
 						</section>
-						<section>							
-							<ul>
-								<li class="">set guru</li>
-								<li class="">milestone</li>
-								<li class="">timeline</li>
-								<li>how u know u are like Addy Osmani</li>								
-								<li>How can you be better</li>								
-							</ul>
-						</section>										
+						<section>
+							<pre><code>
+Array instanceof Object;
+//true
+							</code></pre>
+							<pre class="fragment"><code>
+typeof []; 
+//object
+							</code></pre>
+						</section>
+						<section>
+							<pre><code>
+//arguments are like array
+arguments.length;
+arguments[3];
+arguments[3] = 33;
+							</code></pre>
+							<pre class="fragment"><code>
+arguments.push(21);
+//TypeError: Object has no method 'push'
+							</code></pre>
+						</section>
+						<section>
+							<h2>arguments is array like object</h2>
+							<pre><code>
+typeof arguments;
+//"object"
+							</code></pre>
+						</section>
+						<section>
+							<pre><code>
+(function(){
+  return typeof arguments;
+})();
+
+//"object"
+							</code></pre>
+						</section>
+
 					</section>
 					<section>
 						<section>
