@@ -124,7 +124,7 @@ typeof [];
 //arguments are like array
 arguments.length;
 arguments[3];
-arguments[3] = 33;
+arguments[3] = 45;
 							</code></pre>
 							<pre class="fragment"><code>
 arguments.push(21);
@@ -164,7 +164,9 @@ var y = 1, x = y = typeof x;
 							<pre><code>
 var x;
 x;
-//undefined;
+//undefined
+window.kkkk;
+//undefined
 							</code></pre>
 							<pre class="fragment"><code>
 typeof undefined;
@@ -200,51 +202,30 @@ var y = 1, x = y = typeof x;
    return typeof f();
  })(function(){ return 1; });
 							</code></pre>
-						</section>
+						</section>						
 						<section>
-							<pre><code>function abc(){ 
-   return 1; 
-}
-abc();
-//1</code></pre>
-							<pre class="fragment"><code>function foo(f){
+							<pre class=""><code>function foo(f){
   return f;
 }
+
 foo(2);
 //2	
+
 foo(myFunc);
 //myFunc</code></pre>
-						</section>
+						</section>						
 						<section>
 							<pre><code>fucntion abc(){
-	return 1;
+  return 1;
 }
-function foo(){
-	return abc();	
-}
-foo();
-//1;</code></pre>
-						</section>
-						<section>
-							<pre><code>fucntion abc(){
-	return 1;
-}
+
 function foo(f){
-	return f();	
+  return f();	
 }
+
 foo(abc);
 //1;</code></pre>
-						</section>
-						<section>
-							<pre><code>fucntion abc(){
-	return 1;
-}
-function foo(f){
-  return typeof f();	
-}
-foo(abc);
-//"number";</code></pre>
-						</section>
+						</section>						
 						<section>
 							<pre><code>
  (function f(f){
