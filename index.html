@@ -327,6 +327,24 @@ typeof (f = foo.bar)();
 						Answer: <a href="https://gist.github.com/chicagogrooves/8621766">GitHub gist: Dean</a>
 					</section>
 					<section>
+						<h1>#8</h1>
+						<pre><code>
+var f = (function f(){ return "1"; }, function g(){ return 2; })();
+typeof f;
+						</code></pre>
+					</section>
+					<section>
+						<h1>#9</h1>
+						<pre><code>
+var x = 1;
+if (function f(){}) {
+  x += typeof f;
+}
+x;
+						</code></pre>
+						Answer: <a href="https://gist.github.com/jaswilli/8678445">GitHub gist: Jason</a>
+					</section>
+					<section>
 						<img class="fullScreenImage" src="images/snow7.jpg" alt="">
 					</section>
 					<section>						
