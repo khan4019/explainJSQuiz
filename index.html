@@ -433,6 +433,30 @@ typeof undefined;
 						</section>
 					</section>
 					<section>
+						<h1>#12</h1>
+						<pre><code>
+(function f(){
+  function f(){ return 1; }
+  return f();
+  function f(){ return 2; }
+})();
+						</code></pre>
+						Answer: <a href="https://gist.github.com/sl4m/7bb1ba7e15d564cdcfd7">GitHub gist: Steve</a>
+					</section>
+					<section>
+						<h1>#13</h1>						
+						<pre><code>
+function f(){ return f; }
+new f() instanceof f;
+						</code></pre>
+					</section>
+					<section>
+						<h1>#14</h1>
+						<pre><code>
+with (function(x, undefined){}) length;
+						</code></pre>
+					</section>
+					<section>
 						<img class="fullScreenImage" src="images/snow9.JPG" alt="">
 					</section>					
 					<section>
