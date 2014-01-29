@@ -85,6 +85,11 @@
 				<!-- Any section element inside of this container is displayed as a slide -->
 				<div class="slides">
 <!-- start of intro -->
+					<section>
+						<h1>JS: Tricks</h1>
+						<h2>JavaScript meetup: January 2014</h2>
+						<h4>micro presentation about <a href="http://perfectionkills.com/javascript-quiz/">Kangex JS Quiz</a></h4>
+					</section>
 					<section>						
 						<h2 style="margin-top:-120px !important;"><a href="http://bit.ly/1fudaLM">http://bit.ly/1fudaLM</a> </h2>
 						<img src="images/snow1.JPG" alt="">						
@@ -148,6 +153,25 @@ typeof arguments;
 							</code></pre>
 						</section>
 
+					</section>
+					<section>
+						<h1>#2</h1>
+						<pre><code>
+var f =function g(){ return 23; };
+typeof g();
+						</code></pre>
+						<br>
+						Answer: <a href="https://gist.github.com/nigampatel/8677443">GitHub gist: Nigam</a>
+					</section>
+					<section>
+						<h1>#3</h1>
+						<pre><code>
+(function(x){
+  delete x;
+  return x;
+})(1);
+						</code></pre>
+						Answer: <a href="https://gist.github.com/gurunate/8675450">Github gist: Nate</a>
 					</section>
 					<section>
 						<img class="fullScreenImage" src="images/snow3.jpg" alt="">
