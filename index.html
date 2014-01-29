@@ -271,6 +271,7 @@ foo(abc);
 (function(){
   return typeof arguments[0]();
 })(foo.bar);</code></pre>
+Answer: <a href="https://gist.github.com/theotherzach/8661879"> alternate answer</a>
 						</section>
 						<section>
 							<pre><code>
@@ -313,6 +314,17 @@ kkk();
 //"undefined"
 </code></pre>
 						</section>
+					</section>
+					<section>
+						<h1>#7</h1>
+						<pre><code>
+ var foo = {
+  bar: function(){ return this.baz; },
+  baz: 1
+}
+typeof (f = foo.bar)();
+						</code></pre>
+						Answer: <a href="https://gist.github.com/chicagogrooves/8621766">GitHub gist: Dean</a>
 					</section>
 					<section>
 						<img class="fullScreenImage" src="images/snow7.jpg" alt="">
